@@ -1140,17 +1140,26 @@ main { padding: 120px 20px 20px 20px; }
         <p>आसानी से इंग्लिश बोलना और समझना सीखें। यहाँ मिलेंगे आपको रोज़मर्रा के वाक्य, बुनियादी शब्द, और अभ्यास के लिए बहुत कुछ।</p>
         <div class="home-buttons">
             <button class="cta-button" id="cta-menu-btn">🚀 सीखने की शुरुआत करें ✨</button>
-           
+
+
+
 <button class="cta-button" id="cta-menu-btn" onclick="window.open('https://hindi-to-english-translator-app.vercel.app/', '_blank')">📃 English to हिन्दी    Translator   ✨</button>
 
-<button class="cta-button" id="cta-menu-btn" onclick="window.open('https://example.com/your-link', '_blank')">English to hindi quiz ✨</button>
+<button class="cta-button" id="cta-menu-btn" onclick="window.open('https://english-to-hindi-quiz.vercel.app/', '_blank')">English to hindi quiz ✨</button>
 
- <button class="share-app-button" onclick="shareApp()">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                    <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
-                </svg>
-                ऐप शेयर करें
-            </button>
+
+<button class="cta-button" id="cta-menu-btn" onclick="window.open('https://fun-spark.vercel.app/', '_blank')">FunSpark मजेदार  app ✨</button>
+
+
+<button class="cta-button" id="cta-menu-btn" onclick="window.open('https://my-feelings-hindi-status-and-quotes.vercel.app/', '_blank')">माय फीलिंग्स मजेदार  app ✨</button>
+
+<button class="share-app-button" onclick="shareApp()">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
+    </svg>
+    ऐप शेयर करें
+</button>
+
 
         </div>
     </div>
@@ -1196,7 +1205,7 @@ main { padding: 120px 20px 20px 20px; }
 </div>
 </main>
 <footer class="app-footer">
-    <p>© 2024 इंग्लिश सीखो. Made with 💖 for easy learning.</p>
+    <p>© YADAV Sir - इंग्लिश सीखो. Made with 💖 for easy learning.</p>
 </footer>
 <script>
     // Content Data with English phrases and Hindi meanings
@@ -3751,6 +3760,22 @@ document.addEventListener('DOMContentLoaded', () => {
     contentView.style.display = 'none';
     earnCoinsPage.style.display = 'none';
 });
+
+
+
+// ... existing JavaScript code ...
+
+// NEW: Function to handle sharing the entire app
+function shareApp() {
+    const appTitle = document.title; // Gets the title from your <title> tag
+    const appDescription = "इंग्लिश सीखो - आसानी से इंग्लिश बोलना और समझना सीखें। दैनिक वाक्य, सामान्य प्रश्न, यात्रा के वाक्य, और बहुत कुछ!";
+    const appUrl = window.location.href; // Current URL of the app
+
+    const shareMessage = `${appTitle}\n\n${appDescription}\n\nयह ऐप यहाँ डाउनलोड करें: ${appUrl}\n\n#YADAV Sir इंग्लिशसीखो #SpokenEnglish #LearnEnglish #HindiTranslation`;
+
+    shareText(shareMessage); // Use the existing shareText utility
+}
+
 
 // --- Utility Functions (Copy, Share, Speak) ---
 // ये फंक्शन अब 'clean' टेक्स्ट स्ट्रिंग प्राप्त करेंगे, इन्हें अन-एस्केप करने की आवश्यकता नहीं है।
